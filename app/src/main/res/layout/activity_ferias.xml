@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Rescisao"
     android:background="@color/white"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Ferias">
 
     <TextView
         android:id="@+id/txtRescisao"
@@ -22,103 +22,92 @@
         tools:layout_editor_absoluteY="41dp" />
 
     <TextView
-        android:id="@+id/txtSalario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:text="Salário Bruto"
         android:textColor="#1075C7"
-        android:textSize="15dp" />
+        android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/inputsalario"
+        android:id="@+id/inputFEsalario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:ems="10"
         android:inputType="number"
-        android:textSize="20dp" />
-    <TextView
-        android:id="@+id/txtdatainicio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:text="Data inicial"
-        android:textColor="#1075C7"
-        android:textSize="15dp" />
-    <EditText
-        android:id="@+id/inputRESdatainicio"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:inputType="date"
-        android:textSize="20dp" />
-    <TextView
-        android:id="@+id/txtdatafinal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:text="Data Final"
-        android:textColor="#1075C7"
-        android:textSize="15dp" />
-    <EditText
-        android:id="@+id/inputRESdatafinal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:inputType="date"
-        android:textSize="20dp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:text="Justa Causa?"
-        android:textColor="#1075C7"
-        android:textSize="15dp" />
+        android:textSize="20sp" />
 
-    <Switch
-        android:id="@+id/JustaCausa"
-        android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Não/Sim"
-        android:textColor="#1075C7"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        android:text="Aviso P´revio Cumprido?"
+        android:layout_marginTop="10dp"
+        android:text="Horas Extras (se houver)"
         android:textColor="#1075C7"
-        android:textSize="15dp" />
-    <Switch
-        android:id="@+id/AvisoPrevio"
-        android:layout_marginTop="10sp"
-        android:layout_marginStart="20sp"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/inputFEExtra"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Não/Sim"
-        android:textColor="#1075C7"/>
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Dias de férias"
+        android:textColor="#1075C7"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/inputFEDias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Abono Pecundiário"
+        android:textColor="#1075C7"
+        android:textSize="15sp" />
+
+    <EditText
+        android:id="@+id/inputFEAbono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
         android:text="Número de dependentes"
         android:textColor="#1075C7"
         android:textSize="15sp" />
+
     <EditText
-        android:id="@+id/inputRESDepend"
+        android:id="@+id/inputFEDepende"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -126,57 +115,45 @@
         android:ems="10"
         android:inputType="number"
         android:textSize="20sp" />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="20dp"
-        android:text="Saldo FGTS"
+        android:layout_marginTop="10dp"
+        android:text="Adiantar 13º?"
         android:textColor="#1075C7"
         android:textSize="15sp" />
-    <EditText
-        android:id="@+id/inputRESFgts"
+
+    <Switch
+        android:id="@+id/JustaCausa"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="20sp" />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:layout_marginStart="20dp"
-        android:text="Férias vencidas em dias"
-        android:textColor="#1075C7"
-        android:textSize="15sp" />
-    <EditText
-        android:id="@+id/inputRESFerias"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:ems="10"
-        android:inputType="number"
-        android:textSize="20sp" />
+        android:text="Não/Sim"
+        android:textColor="#1075C7" />
+
     <Button
-        android:id="@+id/btfgtsCalcular"
+        android:id="@+id/btFECalcula"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:text="Calcular"
-        android:textSize="15sp"
         android:backgroundTint="#1075C7"
-        android:layout_gravity="center"/>
+        android:text="Calcular"
+        android:textSize="15sp" />
+
     <Button
-        android:id="@+id/btfgtsmenu"
+        android:id="@+id/btFEMenu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:text="voltar ao Menu"
-        android:textSize="15sp"
         android:backgroundTint="@color/white"
+        android:text="voltar ao Menu"
         android:textColor="#1075C7"
-        android:layout_gravity="center"/>
+        android:textSize="15sp" />
+
+
 </LinearLayout>

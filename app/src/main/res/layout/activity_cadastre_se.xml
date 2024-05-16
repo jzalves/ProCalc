@@ -1,3 +1,4 @@
+
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
@@ -5,20 +6,22 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_margin="0dp"
-    android:background="#8486C5"
-    android:backgroundTint="#B0B1D2">
+    android:background="@color/white"
+    >
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="CADASTRE-SE"
-        android:textSize="50dp"
-        android:textAlignment="center"/>
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:textColor="#1075C7"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nome:"
         android:textSize="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:textColor="#1075C7"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,7 +32,8 @@
         android:layout_height="wrap_content"
         android:text="CPF:"
         android:textSize="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:textColor="#1075C7"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +44,8 @@
         android:layout_height="wrap_content"
         android:text="E-mail:"
         android:textSize="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:textColor="#1075C7"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -51,7 +56,8 @@
         android:layout_height="wrap_content"
         android:text="Senha:"
         android:textSize="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:textColor="#1075C7"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -62,18 +68,20 @@
         android:layout_height="wrap_content"
         android:text="Confirma Senha:"
         android:textSize="20dp"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:textColor="#1075C7"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="20dp"
         android:id="@+id/txtCADSenha2" />
     <Button
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Gravar Dados"
         android:textSize="20dp"
-        android:background="#4B50DD"
-        android:id="@+id/btCADGravar" />
+        android:backgroundTint="#1075C7"
+        android:id="@+id/btCADGravar"
+        android:layout_gravity="center"/>
 </LinearLayout>

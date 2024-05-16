@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class Menu extends AppCompatActivity implements View.OnClickListener{
     TextView txtMENUser;
 
-    ImageButton btMENContatos, btMENPedidos;
+    ImageButton btMENFgts, btMENRescisao, btMENFerias;
 
     String _email = "";
 
@@ -27,25 +27,27 @@ public class Menu extends AppCompatActivity implements View.OnClickListener{
 
 
         txtMENUser = (TextView) findViewById(R.id.txtMENUser);
-        btMENContatos = (ImageButton) findViewById(R.id.btMENContatos);
-        btMENPedidos = (ImageButton) findViewById(R.id.btMENPedidos);
+        btMENFgts = (ImageButton) findViewById(R.id.btMENFgts);
+        btMENRescisao = (ImageButton) findViewById(R.id.btMENRescisao);
+        btMENFerias = (ImageButton) findViewById(R.id.btMENFerias);
 
         txtMENUser.setText("Usuário: " + _email);
-        btMENContatos.setOnClickListener(this);
-        btMENPedidos.setOnClickListener(this);
+        btMENFgts.setOnClickListener(this);
+        btMENRescisao.setOnClickListener(this);
+        btMENFerias.setOnClickListener(this);
     }
     @Override
     public void onClick(View view){
-        if (view.getId()==R.id.btMENContatos){
+        if (view.getId()==R.id.btMENFgts){
             Intent tela = new Intent(this, MainActivity.class);
             startActivity(tela);
         }
-        if (view.getId()==R.id.btMENPedidos){
+        if (view.getId()==R.id.btMENRescisao){
             Intent tela = new Intent(this, Rescisao.class);
-
-            Bundle parametros = new Bundle();
-            parametros.putString("email", _email);
-            tela.putExtras(parametros);
+            startActivity(tela);
+        }
+        if (view.getId()==R.id.btMENFerias){
+            Intent tela = new Intent(this, Rescisao.class);
             startActivity(tela);
         }
     }

@@ -1,31 +1,55 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_margin="0dp"
     android:orientation="vertical"
-    android:background="#8486C5">
+    android:background="@color/white">
+
 
     <TextView
         android:id="@+id/txtMENUser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textSize="20dp"
+        android:textSize="15dp"
+        android:layout_marginStart="20dp"
+        android:textColor="#1075C7"
         android:text="Usuário:" />
 
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#1075C7"
+        android:text="Selecione o que vai calcular:"
+        android:layout_gravity="center"/>
+
     <ImageButton
-        android:id="@+id/btMENContatos"
+        android:id="@+id/btMENFgts"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:layout_width="230dp"
         android:layout_height="130dp"
-         />
+        android:background="@drawable/logo_fgts"
+         /><!--botao para acessar contatos-->
     <ImageButton
-        android:id="@+id/btMENPedidos"
+        android:id="@+id/btMENRescisao"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
         android:layout_width="230dp"
         android:layout_height="130dp"
+        android:background="@drawable/logo_rescisao"
          />
+    <ImageButton
+        android:id="@+id/btMENFerias"
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center"
+        android:layout_width="230dp"
+        android:layout_height="130dp"
+        android:background="@drawable/logo_ferias500px"
+        />
 </LinearLayout>
